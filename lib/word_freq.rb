@@ -7,6 +7,24 @@ class String
       fixnumResult = 0
     else
       sentence.each() do |word|
+        if word.downcase() == searchTerm.downcase()
+          fixnumResult += 1
+        end
+      end
+    end
+    fixnumResult
+  end
+end
+
+class String
+  define_method(:contains_test) do |searchTerm|
+
+    fixnumResult = 0
+    sentence = self.split(" ")
+    if searchTerm == ""
+      fixnumResult = 0
+    else
+      sentence.each() do |word|
         if word.downcase().include?(searchTerm.downcase())
           fixnumResult += 1
         end

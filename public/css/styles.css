@@ -1,6 +1,7 @@
 .jumbotron {
   background-color: #1E60AC;
   color: white;
+  text-align: center;
 }
 
 body {
@@ -12,17 +13,31 @@ body {
   background-color: white;
 }
 
+#hidden_keyword_result {
+  display: none;
+}
+
 #stringInput {
   height: 300px;
   margin-bottom: 30px;
 }
 
-#buttonFormat {
+#buttonFormat3, #buttonFormat4 {
   height: 60px;
-  width: 150px;
+  width: 180px;
   font-size: 20px;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+#buttonFormat, #buttonFormat2 {
+  height: 60px;
+  width: 250px;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .formBorder {
@@ -38,7 +53,8 @@ body {
 
 .textAlign {
   text-align: center;
-  font-size: 20px;
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
 }
 
 #resultsHeader {

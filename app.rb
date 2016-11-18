@@ -8,7 +8,8 @@ get('/') do
 end
 
 get('/count_words') do
-  @result = params.fetch('stringInput').word_freq(params.fetch('word_to_test'))
-  @searchTerm = params.fetch('word_to_test')
+  @result = params.fetch('stringInput').word_freq(params.fetch('contains_test'))
+  @result2 = params.fetch('stringInput').contains_test(params.fetch('contains_test'))
+  @searchTerm = params.fetch('contains_test')
   erb(:word_freq_output)
 end

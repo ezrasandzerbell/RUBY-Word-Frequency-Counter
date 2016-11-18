@@ -16,6 +16,6 @@ describe('ClassType#word_freq') do
     expect("Test tEst teSt tesT test TEST TEst TeSt TesT teST".word_freq("test")).to(eq(10))
   end
   it("tests for presence of word within another word and includes in fixnum result") do
-    expect("Lionel was bit my a mountain lion".word_freq("lion")).to(eq(2))
+    expect("Lionel was bit my a mountain lion".contains_test("lion")).to(eq(2))
   end
 end

@@ -3,13 +3,16 @@
   <h2>Enter a paragraph and test the frequency of a word</h2>
 </div>
 <form action="/count_words" class="textAlign" id="formID">
-  <label for="stringInput">Enter your paragraph here:</label>
+  <label for="stringInput">Enter your text/paragraph here:</label>
   <br>
   <textarea type="textarea" form="formID" name="stringInput" id="stringInput" class="formBorder" rows=10></textarea>
+
+  <div id="contains_match">
+    <label for="contains_test">Search for a single keyword:</label>
+    <br>
+    <input type="text" name="contains_test" id="contains_test" class="formBorder">
+  </div>
+
   <br>
-  <label for="word_to_test">Enter the term you wish to search for:</label>
-  <br>
-  <input type="text" name="word_to_test" id="word_to_test" class="formBorder">
-  <br>
-  <button type="submit" class="btn btn-success" id="buttonFormat">Scan my text</button>
+  <button type="submit" class="btn btn-primary" id="buttonFormat3" >Scan my text</button>
 </form>
