@@ -4,9 +4,11 @@
 </div>
 <div id="resultsHeader">Your keyword "<%= @searchTerm %>" occurs exactly <%= @result %> time(s) within the text.
   <br>
+  
   <div id="hidden_keyword_result">
     <h2>There's a total of <%= @result2 %> words from your paragraph that include the term "<%= @searchTerm %>"</h2>
   </div>
+
   <button type="button" class="btn btn-primary" id="buttonFormat4">Show all instances</button>
   <a href="/"><button type="button" class="btn btn-primary" id="buttonFormat3">Play again</button></a>
   <br>
